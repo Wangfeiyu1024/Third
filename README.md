@@ -153,7 +153,7 @@ try {
 ### （1）scanner输入      
 ![alt console](http://m.qpic.cn/psc?/V528qTS74BHGMM1h1AFf33VeSW0R67RO/ruAMsa53pVQWN7FLK88i5qAtsQiHKh9q*r35qnmUUKy8MCX.FsnmSMUkyQgEqE05PMX*UKHCaK.V10L0s.33L.urdUOQ.mGQCZP9ee2.gwc!/b&bo=GQQlAQAAAAADBxs!&rf=viewer_4)   
 ### （2）args一次性赋值     
-![alt console](http://m.qpic.cn/psc?/V528qTS74BHGMM1h1AFf33VeSW0R67RO/45NBuzDIW489QBoVep5mcT1R1.nCDtOLyEY1yPZYTFp.7lcD1O6FiYqsJJvwkEarqnwcWDZ8kO2OWP71xGHJMg66L7.R8Rs9he3WrzqqEIQ!/b&bo=CATsAAAAAAADF9I!&rf=viewer_4)     
+![alt console](http://m.qpic.cn/psc?/V528qTS74BHGMM1h1AFf33VeSW0R67RO/45NBuzDIW489QBoVep5mcT1R1.nCDtOLyEY1yPZYTFp.7lcD1O6FiYqsJJvwkEarqnwcWDZ8kO2OWP71xGHJMg66L7.R8Rs9he3WrzqqEIQ!/b&bo=CATsAAAAAAADF9I!&rf=viewer_4)      
 ### （3）异常处理      
 ![alt console](http://m.qpic.cn/psc?/V528qTS74BHGMM1h1AFf33VeSW0R67RO/45NBuzDIW489QBoVep5mcT1R1.nCDtOLyEY1yPZYTFoCeuLUbC6mFa7yl2S.JfL7W6X.vvjwbXP3dUlEIhA1CPRRDVS2r.slaeaXGcBE4jM!/b&bo=GQQlAQAAAAADFws!&rf=viewer_4)   
 ## 实验感想
