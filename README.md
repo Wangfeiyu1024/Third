@@ -53,5 +53,99 @@ Java第三次实验
   * 调用args赋值的方法（setFeeWagearg(），里面的参数从args[0]开始  
   * 调用cheak方法，捕获MyException中的异常  
   * 设置args输入下纳税方法并调用  
-  
-     
+## 核心方法
+（1）设置接口类  
+```
+   public interface Student {
+	public abstract double pay(double x);              //缴纳学费
+	public abstract double cheak(double x);           //查学费
+
+}
+```
+（2）接口中的抽象方法定义     
+```
+public abstract double cheakw(double x);
+ } 
+```
+（3）set和get方法的建立  
+```
+public double getFee() {              //返回每学年学费
+		return fee * 2;
+	}
+	public void setFee(double fee) {
+		this.fee = fee;
+	}
+```
+（4）args一次性赋值方法      
+```
+public void setFeeWagearg(String a,String b) {           //设置每学期费用，每月薪水
+		  fee = Double.parseDouble(a);        //字符串类型转换成double类型
+		  wage = Double.parseDouble(b);
+		 }
+ ```
+（5）scanner方法输入           
+```
+Scanner in = new Scanner(System.in);
+		String name = in.next();
+		String sex = in.next();
+		int age = in.nextInt();
+	    double fee = in.nextDouble();
+	    double wage = in.nextDouble();
+```
+ (6)纳税          
+```
+ double Cwage = wage - Test.start;    //起缴
+	    double tax = 0;   
+	    if(Cwage > 0){
+			if(Cwage <= 1500){
+				tax = Cwage * 0.03;
+			}else if(Cwage <= 4500){
+				tax = 1500*0.03 + (Cwage-1500)*0.1;
+			}else if(Cwage <= 9000){
+				tax = 1500*0.03 + 3000*0.1 + (Cwage-4500)*0.2;
+			}else if(Cwage <= 35000){
+				tax = 1500*0.03 + 3000*0.1 + 4500*0.2 + (Cwage-9000)*0.25;
+			}else if(Cwage <= 55000){
+				tax = 1500*0.03 + 3000*0.1 + 4500*0.2 + 26000*0.25 + (Cwage -35000)*0.3;
+			}else if(Cwage <= 80000){
+				tax = 1500*0.03 + 3000*0.1 + 4500*0.2 + 26000*0.25 + 20000*0.3 + (Cwage-55000)*0.35;
+			}else {
+				tax = 1500*0.03 + 3000*0.1 + 4500*0.2 + 26000*0.25 + 20000*0.3 + 25000*0.35 + (Cwage-80000)*0.45;
+			}
+			System.out.println("该学生应交年税为："+tax * 12 );
+		}else{
+			System.out.println("不需要缴税！");
+			}
+		}
+```
+ (7)异常               
+```
+ try{
+	    double fee = in.nextDouble();
+	    double wage = in.nextDouble();
+	    if(fee < 0 || wage < 0) {
+	       throw new MyException("输入错误！输入金额要大于0！");
+	    }else {
+	    System.out.println("该博士"+ name +"(性别" + sex +"年龄"+ age +")：年学费是："+fee * 2 +";"+"年收入是："+wage *12);
+	    //工资和学费之差
+	  }catch(MyException e){
+		  System.out.println(e.getMessage());
+	  }
+	}
+```
+(8)实例化对象             
+```
+  Doctor dstu0;     
+		dstu0 = new Doctor();  
+```
+(9)自定义异常            
+```
+try {
+			cheak.check(dstu1.getWage());
+			cheak.check(dstu1.getFee());
+		}catch(MyException e){
+			System.out.println("用户输入出现以下问题：");
+			System.out.println(e.warnMess());
+			System.exit(0);
+		}
+```
