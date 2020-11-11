@@ -149,6 +149,11 @@ try {
 			System.exit(0);
 		}
 ```
+(10)static final修饰             
+```
+public static final int start=5000;
+double Cwage = stu.getWage() - start;    //起缴
+```
 ## 实验结果
 ### （1）scanner输入      
 ![alt console](http://m.qpic.cn/psc?/V528qTS74BHGMM1h1AFf33VeSW0R67RO/ruAMsa53pVQWN7FLK88i5qAtsQiHKh9q*r35qnmUUKy8MCX.FsnmSMUkyQgEqE05PMX*UKHCaK.V10L0s.33L.urdUOQ.mGQCZP9ee2.gwc!/b&bo=GQQlAQAAAAADBxs!&rf=viewer_4)   
